@@ -98,4 +98,6 @@ Implemented the function findPathToClosestDot in searchAgents.py. Our agent solv
 
 The ClosestDotSearchAgent won't always find the shortest possible path through the maze.
 
+This project was completed with a partner, Joshua Herman (joshua9663)
+
 [Link to official project description](http://ai.berkeley.edu/search.html)
