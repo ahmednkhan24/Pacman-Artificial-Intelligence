@@ -1,7 +1,7 @@
 # Search
 
 ## Introduction
-In this project, my Pacman agent will find paths through his maze world, both to reach a particular location and to collect food efficiently. I built general search algorithms and applied them to Pacman scenarios.
+In this project, our Pacman agent will find paths through his maze world, both to reach a particular location and to collect food efficiently. We built general search algorithms and applied them to Pacman scenarios.
 
 This project includes an autograder for you to grade the answers on your machine. This can be run with the command:
 * `python autograder.py`
@@ -69,7 +69,7 @@ Note: You should get very low and very high path costs for the StayEastSearchAge
 ## A* search
 Implemented A* graph search in the function aStarSearch in search.py. A* takes a heuristic function as an argument. Heuristics take two arguments: a state in the search problem (the main argument), and the problem itself (for reference information). The nullHeuristic heuristic function in search.py is a trivial example.
 
-You can test your A* implementation on the original problem of finding a path through a maze to a fixed position using the Manhattan distance heuristic (implemented already as manhattanHeuristic in searchAgents.py).
+You can test our A* implementation on the original problem of finding a path through a maze to a fixed position using the Manhattan distance heuristic (implemented already as manhattanHeuristic in searchAgents.py).
 
 * `python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic`
 You should see that A* finds the optimal solution slightly faster than uniform cost search (about 549 vs. 620 search nodes expanded in our implementation, but ties in priority may make your numbers differ slightly).
@@ -90,7 +90,7 @@ Our UCS agent finds the optimal solution in about 13 seconds, exploring over 16,
 Any non-trivial non-negative consistent heuristic will receive 1 point. Made sure that the heuristic returns 0 at every goal state and never returns a negative value.
 
 ## Suboptimal Search
-Sometimes, even with A* and a good heuristic, finding the optimal path through all the dots is hard. In these cases, we'd still like to find a reasonably good path, quickly. I write an agent that always greedily eats the closest dot.
+Sometimes, even with A* and a good heuristic, finding the optimal path through all the dots is hard. In these cases, we'd still like to find a reasonably good path, quickly. We wrote an agent that always greedily eats the closest dot.
 
 Implemented the function findPathToClosestDot in searchAgents.py. Our agent solves this maze (suboptimally!) in under a second with a path cost of 350:
 
